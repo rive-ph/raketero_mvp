@@ -1,19 +1,22 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component, Fragment } from "react";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>asdsad</Text>
-    </View>
-  );
+import Login from "./src/screens/login";
+
+import { StyleSheet, Text, View } from "react-native";
+import Secured from "./src/screens/secured";
+
+
+export default class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      authenticated : false
+    }
+  }
+  render() {
+    return (
+      <Login />
+    );
+  }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
