@@ -6,10 +6,16 @@ import {
   View,
   TextInput,
   TouchableOpacity,
-  ImageBackground,Image
+  ImageBackground,
+  Image,
+  StatusBar,
+  AsyncStorage
 } from "react-native";
 
+
 import { loginbg } from "../assets";
+
+
 
 export default class Login extends Component {
   state = {
@@ -20,18 +26,28 @@ export default class Login extends Component {
     super(props);
   }
 
+
+  onAuthenticated = async () => {
+    await AsyncStorage.setItem("userToken", 'hello');
+    this.props.navigation.navigate('App');
+  };
+
   render() {
     return (
       <ImageBackground
         source={require("../assets/loginbg.jpg")}
         style={styles.container}
       >
-          <Image source={require("../assets/logo.png")} style={{width: "60%", height: 100}} />
+      <StatusBar hidden />
+        <Image
+          source={require("../assets/logo.png")}
+          style={{ width: "60%", height: 150 }}
+        />
         <View style={styles.inputView}>
           <TextInput
             style={styles.inputText}
             placeholder="User Name"
-            placeholderTextColor="#003f5c"
+            placeholderTextColor="#BDBDBD"
             onChangeText={text => this.setState({ email: text })}
           />
         </View>
@@ -39,15 +55,23 @@ export default class Login extends Component {
           <TextInput
             secureTextEntry
             style={styles.inputText}
-            placeholder="Password..."
-            placeholderTextColor="#003f5c"
+            placeholder="Password"
+            placeholderTextColor="#BDBDBD"
             onChangeText={text => this.setState({ password: text })}
           />
         </View>
         <TouchableOpacity>
           <Text style={styles.forgot}>Forgot Password?</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.loginBtn}>
+        <TouchableOpacity
+          style={styles.loginBtn}
+          onPress={() => {
+            this.onAuthenticated({
+              userName: this.state.email,
+              password: this.state.password
+            });
+          }}
+        >
           <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.signUpBtn}>
@@ -112,5 +136,5 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     marginTop: 5,
     marginBottom: 5
-  },
+  }
 });
