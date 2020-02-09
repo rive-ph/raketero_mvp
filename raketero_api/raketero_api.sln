@@ -5,6 +5,21 @@ VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "raketero_api", "raketero_api\raketero_api.csproj", "{7F42C13D-2AAB-4C85-BA9F-1F3861FE97A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raketero.Entities", "Raketero.Entities\Raketero.Entities.csproj", "{DE399AFA-DAC5-4A70-B50F-9E36DB373F5F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APP", "APP", "{2A4B6C83-B950-4F18-A41A-C0C3119B9BC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E05753AE-0BD3-464B-A79B-5D4C4A20EAA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{BF484B09-02CD-454C-84AE-439EC2FFA25F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{50E8F9C4-47E8-4473-BBAC-A4CE713BD105}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{409DCA5C-65D6-44E8-965F-3303EF38FC15}"
+	ProjectSection(SolutionItems) = preProject
+		raketero_erd.mwb = raketero_erd.mwb
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +30,19 @@ Global
 		{7F42C13D-2AAB-4C85-BA9F-1F3861FE97A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F42C13D-2AAB-4C85-BA9F-1F3861FE97A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F42C13D-2AAB-4C85-BA9F-1F3861FE97A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE399AFA-DAC5-4A70-B50F-9E36DB373F5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE399AFA-DAC5-4A70-B50F-9E36DB373F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE399AFA-DAC5-4A70-B50F-9E36DB373F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE399AFA-DAC5-4A70-B50F-9E36DB373F5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7F42C13D-2AAB-4C85-BA9F-1F3861FE97A2} = {2A4B6C83-B950-4F18-A41A-C0C3119B9BC9}
+		{2A4B6C83-B950-4F18-A41A-C0C3119B9BC9} = {E05753AE-0BD3-464B-A79B-5D4C4A20EAA9}
+		{BF484B09-02CD-454C-84AE-439EC2FFA25F} = {E05753AE-0BD3-464B-A79B-5D4C4A20EAA9}
+		{50E8F9C4-47E8-4473-BBAC-A4CE713BD105} = {E05753AE-0BD3-464B-A79B-5D4C4A20EAA9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DFC7F33-ED60-4C45-B1E4-060E3D8C2086}
