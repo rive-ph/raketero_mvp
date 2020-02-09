@@ -1,22 +1,16 @@
 import React, { Component, Fragment } from "react";
-
+import Navigator from "./routes/SecuredStack";
 import Login from "./src/screens/login";
-
-import { StyleSheet, Text, View } from "react-native";
-import Secured from "./src/screens/secured";
 
 
 export default class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state = {
-      authenticated : false
-    }
   }
+
+
+
   render() {
-    return (
-      <Login />
-    );
+    return <Navigator />;
   }
 }
-
