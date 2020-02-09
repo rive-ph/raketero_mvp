@@ -12,4 +12,9 @@ namespace Raketero.Entities
 
         DateTime LastModified { get; set; }
     }
+    public abstract class EntityBase : IEntity
+    {
+        public int Id { get; set; }
+        public DateTime LastModified { get; set; }
+    }
 }
