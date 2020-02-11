@@ -16,7 +16,7 @@ namespace Raketero.Entities
         public int CategoryId { get; set; }
         public string Description { get; set; }
         public DateTime PostDate { get; set; }
-        public bool IsActive { get; set; }
+        public bool IsActive { get; set; } = false;
         public BusinessJobPostStatus Status { get; set; }
     }
 }

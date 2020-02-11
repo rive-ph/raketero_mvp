@@ -15,7 +15,7 @@ namespace Raketero.Entities
         public DateTime BirthDate { get; set; }
         public string PermanentAddress { get; set; }
         public string TemporaryAddress { get; set; }
-        public bool IsVerified { get; set; }
-        public bool IsActive { get; set; }
+        public bool IsVerified { get; set; } = false;
+        public bool IsActive { get; set; } = false;
     }
 }

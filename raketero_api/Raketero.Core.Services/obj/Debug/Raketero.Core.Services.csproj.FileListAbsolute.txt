@@ -1,0 +1,9 @@
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Services\obj\Debug\Raketero.Core.Services.csprojAssemblyReference.cache
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Services\obj\Debug\Raketero.Core.Services.csproj.CoreCompileInputs.cache
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Services\bin\Debug\Raketero.Core.Services.dll
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Services\bin\Debug\Raketero.Core.Services.pdb
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Services\bin\Debug\Management.Core.dll
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Services\bin\Debug\Management.Core.pdb
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Services\obj\Debug\Raketero.Core.Services.csproj.CopyComplete
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Services\obj\Debug\Raketero.Core.Services.dll
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Services\obj\Debug\Raketero.Core.Services.pdb
