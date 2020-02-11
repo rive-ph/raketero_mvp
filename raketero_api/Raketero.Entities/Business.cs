@@ -8,8 +8,7 @@ namespace Raketero.Entities
 {
     public enum BusinessStatus
     {
-        Active = 1, 
-        Inactive = 2
+        NotSet = 0
     }
 
     public class Business : EntityBase
@@ -21,7 +20,8 @@ namespace Raketero.Entities
         public string Owner { get; set; }
         public string Website { get; set; }
         public BusinessStatus Status { get; set; }
-        public bool IsVerified { get; set; }
+        public bool IsVerified { get; set; } = false;
+        public bool IsActive { get; set; } = false;
         public IEnumerable<BusinessCredentials> Credentials { get; set; }
     }
 }

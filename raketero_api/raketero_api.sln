@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "raketero_api", "raketero_api\raketero_api.csproj", "{7F42C13D-2AAB-4C85-BA9F-1F3861FE97A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Raketero.Core.API", "raketero_api\Raketero.Core.API.csproj", "{7F42C13D-2AAB-4C85-BA9F-1F3861FE97A2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raketero.Entities", "Raketero.Entities\Raketero.Entities.csproj", "{DE399AFA-DAC5-4A70-B50F-9E36DB373F5F}"
 EndProject
@@ -20,6 +20,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{409DCA5C-6
 		raketero_erd.mwb = raketero_erd.mwb
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raketero.Core.Services", "Raketero.Core.Services\Raketero.Core.Services.csproj", "{5BB1EA8C-8D3D-40C1-AAD2-88ECB0F957AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Management.Core", "Management.Core\Management.Core.csproj", "{DB3FA3B3-7CE5-4E03-A6B1-346B0B7E34DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helpers", "Helpers", "{1E115E29-C8CD-4EC6-B585-9B92C92D0E6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{BD0A3E38-7701-4F16-8416-808E540139BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,15 +42,27 @@ Global
 		{DE399AFA-DAC5-4A70-B50F-9E36DB373F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE399AFA-DAC5-4A70-B50F-9E36DB373F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE399AFA-DAC5-4A70-B50F-9E36DB373F5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB1EA8C-8D3D-40C1-AAD2-88ECB0F957AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BB1EA8C-8D3D-40C1-AAD2-88ECB0F957AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BB1EA8C-8D3D-40C1-AAD2-88ECB0F957AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BB1EA8C-8D3D-40C1-AAD2-88ECB0F957AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB3FA3B3-7CE5-4E03-A6B1-346B0B7E34DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB3FA3B3-7CE5-4E03-A6B1-346B0B7E34DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB3FA3B3-7CE5-4E03-A6B1-346B0B7E34DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB3FA3B3-7CE5-4E03-A6B1-346B0B7E34DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7F42C13D-2AAB-4C85-BA9F-1F3861FE97A2} = {2A4B6C83-B950-4F18-A41A-C0C3119B9BC9}
+		{DE399AFA-DAC5-4A70-B50F-9E36DB373F5F} = {BD0A3E38-7701-4F16-8416-808E540139BE}
 		{2A4B6C83-B950-4F18-A41A-C0C3119B9BC9} = {E05753AE-0BD3-464B-A79B-5D4C4A20EAA9}
 		{BF484B09-02CD-454C-84AE-439EC2FFA25F} = {E05753AE-0BD3-464B-A79B-5D4C4A20EAA9}
 		{50E8F9C4-47E8-4473-BBAC-A4CE713BD105} = {E05753AE-0BD3-464B-A79B-5D4C4A20EAA9}
+		{5BB1EA8C-8D3D-40C1-AAD2-88ECB0F957AB} = {BF484B09-02CD-454C-84AE-439EC2FFA25F}
+		{1E115E29-C8CD-4EC6-B585-9B92C92D0E6A} = {E05753AE-0BD3-464B-A79B-5D4C4A20EAA9}
+		{BD0A3E38-7701-4F16-8416-808E540139BE} = {E05753AE-0BD3-464B-A79B-5D4C4A20EAA9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DFC7F33-ED60-4C45-B1E4-060E3D8C2086}

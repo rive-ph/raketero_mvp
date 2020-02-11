@@ -11804,9 +11804,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\raketero\\apps\\raketero_mvp\\raketero_mvp\\raketero_api\\raketero_api\\raketero_api.csproj",
-      "projectName": "raketero_api",
-      "projectPath": "D:\\raketero\\apps\\raketero_mvp\\raketero_mvp\\raketero_api\\raketero_api\\raketero_api.csproj",
+      "projectUniqueName": "D:\\raketero\\apps\\raketero_mvp\\raketero_mvp\\raketero_api\\raketero_api\\Raketero.Core.API.csproj",
+      "projectName": "Raketero.Core.API",
+      "projectPath": "D:\\raketero\\apps\\raketero_mvp\\raketero_mvp\\raketero_api\\raketero_api\\Raketero.Core.API.csproj",
       "packagesPath": "C:\\Users\\kmavillanosa\\.nuget\\packages\\",
       "outputPath": "D:\\raketero\\apps\\raketero_mvp\\raketero_mvp\\raketero_api\\raketero_api\\obj\\",
       "projectStyle": "PackageReference",

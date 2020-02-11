@@ -8,14 +8,15 @@ namespace Raketero.Entities
 {
     public enum BusinessJobPostStatus
     {
-        Active = 1, 
-        Inactive = 2
+        NotSet = 0
     }
 
-    public class BusinessJobPost
+    public class BusinessJobPost : EntityBase
     {
+        public int CategoryId { get; set; }
         public string Description { get; set; }
         public DateTime PostDate { get; set; }
-        public BusinessJobPostStatus BusinessJobPostStatus { get; set; }
+        public bool IsActive { get; set; } = false;
+        public BusinessJobPostStatus Status { get; set; }
     }
 }
