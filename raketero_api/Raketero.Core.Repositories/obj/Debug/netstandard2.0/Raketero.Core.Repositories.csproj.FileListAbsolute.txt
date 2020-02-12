@@ -7,3 +7,8 @@ D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Repositori
 D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Repositories\obj\Debug\netstandard2.0\Raketero.Core.Repositories.AssemblyInfo.cs
 D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Repositories\obj\Debug\netstandard2.0\Raketero.Core.Repositories.dll
 D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Repositories\obj\Debug\netstandard2.0\Raketero.Core.Repositories.pdb
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Repositories\bin\Debug\netstandard2.0\Management.Core.dll
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Repositories\bin\Debug\netstandard2.0\Raketero.Core.Services.dll
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Repositories\bin\Debug\netstandard2.0\Management.Core.pdb
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Repositories\bin\Debug\netstandard2.0\Raketero.Core.Services.pdb
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Repositories\obj\Debug\netstandard2.0\Raketero.Core.Repositories.csproj.CopyComplete

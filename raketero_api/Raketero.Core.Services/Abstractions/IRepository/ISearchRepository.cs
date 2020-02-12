@@ -10,6 +10,6 @@ namespace Raketero.Core.Services
     public interface ISearchRepository : IRepository
     {
         Task<IEnumerable<ClientSearchResult>> SearchClients(FindClientsQuery findClientsQuery);
-        Task<IEnumerable<FindProvidersQuery>> SearchProviders(FindProvidersQuery findClientsQuery);
+        Task<IEnumerable<ProviderSearchResult>> SearchProviders(FindProvidersQuery findClientsQuery);
     }
 }

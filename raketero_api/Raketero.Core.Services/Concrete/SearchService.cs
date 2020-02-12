@@ -21,9 +21,10 @@ namespace Raketero.Core.Services.Concrete
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<FindProvidersQuery>> SearchProviders(FindProvidersQuery findClientsQuery)
+        public async Task<IEnumerable<ProviderSearchResult>> SearchProviders(FindProvidersQuery findProvidersQuery)
         {
-            throw new NotImplementedException();
+            var searchRepository = RepositoryResourceFactory.GetInstance<ISearchRepository>();
+            return await searchRepository.SearchProviders(findProvidersQuery);
         }
     }
 }
