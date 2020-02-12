@@ -1,6 +1,5 @@
 D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Management.Core\bin\Debug\Management.Core.dll
 D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Management.Core\bin\Debug\Management.Core.pdb
-D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Management.Core\obj\Debug\Management.Core.csprojAssemblyReference.cache
 D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Management.Core\obj\Debug\Management.Core.csproj.CoreCompileInputs.cache
 D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Management.Core\obj\Debug\Management.Core.dll
 D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Management.Core\obj\Debug\Management.Core.pdb

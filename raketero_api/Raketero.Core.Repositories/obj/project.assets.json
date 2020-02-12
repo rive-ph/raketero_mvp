@@ -42,18 +42,6 @@
           "lib/netstandard2.0/Dapper.Contrib.dll": {}
         }
       },
-      "DapperExtensions/1.6.3": {
-        "type": "package",
-        "dependencies": {
-          "Dapper": "1.12.0"
-        },
-        "compile": {
-          "lib/net45/DapperExtensions.dll": {}
-        },
-        "runtime": {
-          "lib/net45/DapperExtensions.dll": {}
-        }
-      },
       "Google.Protobuf/3.6.1": {
         "type": "package",
         "dependencies": {
@@ -125,6 +113,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.native.System/4.0.0": {
@@ -940,6 +937,27 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "Management.Core/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Management.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Management.Core.dll": {}
+        }
+      },
+      "Raketero.Core.Services/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Management.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Raketero.Core.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Raketero.Core.Services.dll": {}
+        }
       }
     }
   },
@@ -999,21 +1017,6 @@
         "lib/net461/Dapper.Contrib.xml",
         "lib/netstandard2.0/Dapper.Contrib.dll",
         "lib/netstandard2.0/Dapper.Contrib.xml"
-      ]
-    },
-    "DapperExtensions/1.6.3": {
-      "sha512": "KrmiZVbSu8NcjcdteDfuLKEES8ZA/HOHyDO4n5Gvc2CuSxulaRaEPofr0zCH7LM/yevi2gSnA5GlOGYj8Ayd6w==",
-      "type": "package",
-      "path": "dapperextensions/1.6.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "dapperextensions.1.6.3.nupkg.sha512",
-        "dapperextensions.nuspec",
-        "lib/net40/DapperExtensions.dll",
-        "lib/net40/DapperExtensions.pdb",
-        "lib/net45/DapperExtensions.dll",
-        "lib/net45/DapperExtensions.pdb"
       ]
     },
     "Google.Protobuf/3.6.1": {
@@ -1278,6 +1281,37 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "runtime.native.System/4.0.0": {
@@ -4048,15 +4082,27 @@
         "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "Management.Core/1.0.0": {
+      "type": "project",
+      "path": "../Management.Core/Management.Core.csproj",
+      "msbuildProject": "../Management.Core/Management.Core.csproj"
+    },
+    "Raketero.Core.Services/1.0.0": {
+      "type": "project",
+      "path": "../Raketero.Core.Services/Raketero.Core.Services.csproj",
+      "msbuildProject": "../Raketero.Core.Services/Raketero.Core.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "Dapper >= 2.0.30",
       "Dapper.Contrib >= 2.0.30",
-      "DapperExtensions >= 1.6.3",
+      "Management.Core >= 1.0.0",
       "MySql.Data >= 8.0.19",
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "Newtonsoft.Json >= 12.0.3",
+      "Raketero.Core.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4091,7 +4137,14 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\raketero\\apps\\raketero_mvp\\raketero_mvp\\raketero_api\\Management.Core\\Management.Core.csproj": {
+              "projectPath": "D:\\raketero\\apps\\raketero_mvp\\raketero_mvp\\raketero_api\\Management.Core\\Management.Core.csproj"
+            },
+            "D:\\raketero\\apps\\raketero_mvp\\raketero_mvp\\raketero_api\\Raketero.Core.Services\\Raketero.Core.Services.csproj": {
+              "projectPath": "D:\\raketero\\apps\\raketero_mvp\\raketero_mvp\\raketero_api\\Raketero.Core.Services\\Raketero.Core.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -4111,10 +4164,6 @@
             "target": "Package",
             "version": "[2.0.30, )"
           },
-          "DapperExtensions": {
-            "target": "Package",
-            "version": "[1.6.3, )"
-          },
           "MySql.Data": {
             "target": "Package",
             "version": "[8.0.19, )"
@@ -4124,6 +4173,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.3, )"
           }
         },
         "imports": [
@@ -4133,17 +4186,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DapperExtensions 1.6.3' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "DapperExtensions",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }
