@@ -1,0 +1,9 @@
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Repositories\bin\Debug\netstandard2.0\Raketero.Core.Repositories.deps.json
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Repositories\bin\Debug\netstandard2.0\Raketero.Core.Repositories.dll
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Repositories\bin\Debug\netstandard2.0\Raketero.Core.Repositories.pdb
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Repositories\obj\Debug\netstandard2.0\Raketero.Core.Repositories.csprojAssemblyReference.cache
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Repositories\obj\Debug\netstandard2.0\Raketero.Core.Repositories.csproj.CoreCompileInputs.cache
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Repositories\obj\Debug\netstandard2.0\Raketero.Core.Repositories.AssemblyInfoInputs.cache
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Repositories\obj\Debug\netstandard2.0\Raketero.Core.Repositories.AssemblyInfo.cs
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Repositories\obj\Debug\netstandard2.0\Raketero.Core.Repositories.dll
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Core.Repositories\obj\Debug\netstandard2.0\Raketero.Core.Repositories.pdb

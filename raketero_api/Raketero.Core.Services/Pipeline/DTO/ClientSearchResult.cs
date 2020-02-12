@@ -9,20 +9,22 @@ namespace Raketero.Core.Services
     public class ClientSearchResult
     {
         public int RaketeroId { get; private set; }
-        public string Name { get; private set; }
+        public string FirstName { get; private set; }
+        public string LastNameName { get; private set; }
+        public string MiddleNameName { get; private set; }
         public string Description { get; private set; }
         public List<string> Tags { get; private set; }
         public DateTime PostDate { get; set; }
-        public int SearchRatingRatio { get; set; }
 
-        public ClientSearchResult(int raketeroId, string name, string description, List<string> tags, DateTime postDate, int searchRatingRatio)
+        public ClientSearchResult(int raketeroId, string firstName, string lastNameName, string middleNameName, string description, List<string> tags, DateTime postDate)
         {
             RaketeroId = raketeroId;
-            Name = name;
+            FirstName = firstName;
+            LastNameName = lastNameName;
+            MiddleNameName = middleNameName;
             Description = description;
             Tags = tags;
             PostDate = postDate;
-            SearchRatingRatio = searchRatingRatio;
         }
 
     }

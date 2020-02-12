@@ -41,7 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstractions\ISearchService.cs" />
+    <Compile Include="Abstractions\IRepository\IBusinessJobPostsRepository.cs" />
+    <Compile Include="Abstractions\IRepository\IBusinessRepository.cs" />
+    <Compile Include="Abstractions\IRepository\ICategoryRepository.cs" />
+    <Compile Include="Abstractions\IRepository\IJobRepository.cs" />
+    <Compile Include="Abstractions\IRepository\ISearchRepository.cs" />
+    <Compile Include="Abstractions\IRepository\IUserRepository.cs" />
+    <Compile Include="Abstractions\IService\ISearchService.cs" />
+    <Compile Include="Concrete\SearchService.cs" />
     <Compile Include="Pipeline\DTO\ClientSearchResult.cs" />
     <Compile Include="Pipeline\DTO\ProviderSearchResult.cs" />
     <Compile Include="Pipeline\Query\FindClientsQuery.cs" />
@@ -49,7 +56,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Concrete\" />
     <Folder Include="Pipeline\Command\" />
   </ItemGroup>
   <ItemGroup>
