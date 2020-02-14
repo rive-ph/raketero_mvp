@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Raketero.Core.Repositories
 {
-    public class DapperSearchModel
+    public class DapperSearchProvidersModel
     {
         public int RaketeroId { get; private set; }
         public string FirstName { get; private set; }

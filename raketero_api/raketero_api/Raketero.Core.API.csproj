@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Raketero.Core.Repositories\Raketero.Core.Repositories.csproj" />
     <ProjectReference Include="..\Raketero.Core.Services\Raketero.Core.Services.csproj" />
   </ItemGroup>
 
