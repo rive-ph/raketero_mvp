@@ -19,3 +19,4 @@ D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\raketero_api\bin\Debug\n
 D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\raketero_api\obj\Debug\netcoreapp2.1\Raketero.Core.API.csproj.CopyComplete
 D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\raketero_api\bin\Debug\netcoreapp2.1\Raketero.Core.Repositories.dll
 D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\raketero_api\bin\Debug\netcoreapp2.1\Raketero.Core.Repositories.pdb
+D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\raketero_api\bin\Debug\netcoreapp2.1\Raketero.Core.API.xml
