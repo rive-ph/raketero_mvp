@@ -13,18 +13,47 @@ namespace Raketero.Core.API.Controllers
     public class SearchController : Controller
     {
 
+
+        public SearchController(ISearchService searchService)
+        {
+            SearchService = searchService;
+        }
+
+        public ISearchService SearchService { get; }
+
         [HttpGet("providers")]
         public async Task<IActionResult> FindProviders(FindProvidersQuery findProvidersQuery)
         {
-            await Task.Delay(1000);
-            return Ok("Nig");
+            var providerList = await SearchService.SearchProviders(findProvidersQuery);
+            if (providerList.Count() > 0)
+            {
+                return Ok(providerList);
+            }
+            else
+            {
+                return NoContent();
+            }
         }
 
         [HttpGet("clients")]
-        public async Task<IActionResult> FindProviders(FindClientsQuery findClients)
+        public async Task<IActionResult> FindClients(FindClientsQuery findClients)
         {
-            await Task.Delay(1000);
-            return Ok("Nig");
+            try
+            {
+                var clientsList = await SearchService.SearchClients(findClients);
+                if(clientsList.Count() > 0)
+                {
+                    return Ok(clientsList);
+                }
+                else
+                {
+                    return NoContent();
+                }
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

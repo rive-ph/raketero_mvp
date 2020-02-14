@@ -35,20 +35,16 @@ namespace Raketero.Core.Repositories
             DataConnection.Dispose();
         }
 
-        public Task<IEnumerable<ClientSearchResult>> SearchClients(FindClientsQuery findClientsQuery)
+        public async Task<IEnumerable<ClientSearchResult>> SearchClients(FindClientsQuery findClientsQuery)
         {
-            throw new NotImplementedException();
-        }
-
-        public async Task<IEnumerable<ProviderSearchResult>> SearchProviders(FindProvidersQuery findClientsQuery)
-        {
-            var requestList = await DataConnection.QueryAsync<DapperSearchModel>(@"SELECT 
+            var requestList = await DataConnection.QueryAsync<DapperSearchClientsModel>(
+               $@"SELECT 
     a.`id` AS `RaketeroId`,
     a.`FirstName`,
     a.`MiddleName`,
     a.`LastName`,
     j.`Title`,
-    c.`Keywords`,
+    c.`Keywords` as `Tags`,
     c.`description`
 FROM
     `account` a
@@ -58,7 +54,40 @@ FROM
     `category` c ON c.`id` = j.`categoryId`
 WHERE
     a.IsVerified = 1
-and c.`Keywords` like `%@searchKey%`", new { @searchKey = findClientsQuery.SearchKey });
+and c.`Keywords` like '%{findClientsQuery.SearchKey}%'");
+
+            var resultlist = requestList.AsList().Select(item => new ClientSearchResult(
+                item.RaketeroId,
+                item.FirstName,
+                item.LastName,
+                item.MiddleName,
+                item.Description,
+                JsonConvert.DeserializeObject<List<string>>(item.Tags),
+                item.PostDate));
+
+            return resultlist;
+        }
+
+        public async Task<IEnumerable<ProviderSearchResult>> SearchProviders(FindProvidersQuery findClientsQuery)
+        {
+            var requestList = await DataConnection.QueryAsync<DapperSearchProvidersModel>(
+                $@"SELECT 
+    a.`id` AS `RaketeroId`,
+    a.`FirstName`,
+    a.`MiddleName`,
+    a.`LastName`,
+    j.`Title`,
+    c.`Keywords` as `Tags`,
+    c.`description`
+FROM
+    `account` a
+        LEFT JOIN
+    `job` j ON j.accountId = a.id
+        LEFT JOIN
+    `category` c ON c.`id` = j.`categoryId`
+WHERE
+    a.IsVerified = 1
+and c.`Keywords` like '%{findClientsQuery.SearchKey}%'");
 
             var resultlist = requestList.AsList().Select(item => new ProviderSearchResult(
                 item.RaketeroId,
