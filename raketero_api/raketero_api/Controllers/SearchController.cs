@@ -21,8 +21,13 @@ namespace Raketero.Core.API.Controllers
 
         public ISearchService SearchService { get; }
 
+        /// <summary>
+        /// Search for businesses 
+        /// </summary>
+        /// <param name="findProvidersQuery"></param>
+        /// <returns></returns>
         [HttpGet("providers")]
-        public async Task<IActionResult> FindProviders(FindProvidersQuery findProvidersQuery)
+        public async Task<IActionResult> FindProviders([FromQuery]FindProvidersQuery findProvidersQuery)
         {
             var providerList = await SearchService.SearchProviders(findProvidersQuery);
             if (providerList.Count() > 0)
@@ -35,8 +40,13 @@ namespace Raketero.Core.API.Controllers
             }
         }
 
+        /// <summary>
+        /// Search for clients
+        /// </summary>
+        /// <param name="findClients"></param>
+        /// <returns></returns>
         [HttpGet("clients")]
-        public async Task<IActionResult> FindClients(FindClientsQuery findClients)
+        public async Task<IActionResult> FindClients([FromQuery]FindClientsQuery findClients)
         {
             try
             {

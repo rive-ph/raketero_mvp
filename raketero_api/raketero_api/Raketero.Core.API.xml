@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Raketero.Core.API</name>
+    </assembly>
+    <members>
+        <member name="M:Raketero.Core.API.Controllers.AccountController.Login(Raketero.Core.Services.LoginQuery)">
+            <summary>
+            Log Account
+            </summary>
+            <param name="loginQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Raketero.Core.API.Controllers.AccountController.SignUp(Raketero.Core.Services.SignUpCommand)">
+            <summary>
+            Register Account
+            </summary>
+            <param name="signUpCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Raketero.Core.API.Controllers.SearchController.FindProviders(Raketero.Core.Services.FindProvidersQuery)">
+            <summary>
+            Search for businesses 
+            </summary>
+            <param name="findProvidersQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Raketero.Core.API.Controllers.SearchController.FindClients(Raketero.Core.Services.FindClientsQuery)">
+            <summary>
+            Search for clients
+            </summary>
+            <param name="findClients"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

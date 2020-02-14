@@ -47,17 +47,19 @@
     <Compile Include="Abstractions\IRepository\IJobRepository.cs" />
     <Compile Include="Abstractions\IRepository\ISearchRepository.cs" />
     <Compile Include="Abstractions\IRepository\IUserRepository.cs" />
+    <Compile Include="Abstractions\IService\IAccountService.cs" />
     <Compile Include="Abstractions\IService\ISearchService.cs" />
     <Compile Include="Concrete\SearchService.cs" />
+    <Compile Include="Pipeline\Command\SignUpCommand.cs" />
     <Compile Include="Pipeline\DTO\ClientSearchResult.cs" />
+    <Compile Include="Pipeline\DTO\LoginResult.cs" />
     <Compile Include="Pipeline\DTO\ProviderSearchResult.cs" />
     <Compile Include="Pipeline\Query\FindClientsQuery.cs" />
     <Compile Include="Pipeline\Query\FindProvidersQuery.cs" />
+    <Compile Include="Pipeline\Query\LoginQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Pipeline\Command\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Management.Core\Management.Core.csproj">
       <Project>{DB3FA3B3-7CE5-4E03-A6B1-346B0B7E34DE}</Project>
