@@ -111,7 +111,12 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "raketero_xamarin.Android.dll" comes first in this list. */
 		"raketero_xamarin.Android.dll",
+		"Autofac.dll",
+		"Autofac.Extras.CommonServiceLocator.dll",
+		"CommonServiceLocator.dll",
 		"FormsViewGroup.dll",
+		"Microsoft.Bcl.AsyncInterfaces.dll",
+		"PropertyChanged.dll",
 		"raketero_xamarin.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",

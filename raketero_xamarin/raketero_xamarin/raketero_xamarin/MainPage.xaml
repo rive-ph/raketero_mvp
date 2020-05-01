@@ -3,14 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
+             mc:Ignorable="d" BackgroundColor="{StaticResource Primary}"
+             BindingContext="{Binding Main,Source={StaticResource Locator}}"
              x:Class="raketero_xamarin.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+
+    <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackLayout  Grid.Row="0">
+            <Entry Placeholder="hello"  Text="{Binding Message}"/>
+            <Entry Placeholder="hello" Text="{Binding Message}"/>
+        </StackLayout>
+        <Button  Grid.Row="1" Text="Save"/>
+    </Grid>
 
 </ContentPage>
