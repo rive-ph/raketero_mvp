@@ -1,9 +1,0 @@
-D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Entities\bin\Debug\Raketero.Entities.dll
-D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Entities\bin\Debug\Raketero.Entities.pdb
-D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Entities\bin\Debug\Management.Core.dll
-D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Entities\bin\Debug\Management.Core.pdb
-D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Entities\obj\Debug\Raketero.Entities.csprojAssemblyReference.cache
-D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Entities\obj\Debug\Raketero.Entities.csproj.CoreCompileInputs.cache
-D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Entities\obj\Debug\Raketero.Entities.csproj.CopyComplete
-D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Entities\obj\Debug\Raketero.Entities.dll
-D:\raketero\apps\raketero_mvp\raketero_mvp\raketero_api\Raketero.Entities\obj\Debug\Raketero.Entities.pdb
