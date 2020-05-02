@@ -4,12 +4,6 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="raketero_xamarin.Views.ShellView">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="{Binding Test}"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+            xmlns:cal="clr-namespace:Caliburn.Micro.Xamarin.Forms;assembly=Caliburn.Micro.Platform.Xamarin.Forms"
+             x:Class="raketero_xamarin.Views.ShellView" cal:View.Model="{Binding ActiveItem,Mode=TwoWay}">
 </ContentPage>

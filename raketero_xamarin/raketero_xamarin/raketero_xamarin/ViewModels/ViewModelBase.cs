@@ -7,6 +7,6 @@ namespace raketero_xamarin.ViewModels
 {
     public abstract class ViewModelBase : IViewModel
     {
-        public virtual string DisplayName { get; set; } = "Add Name";
+        public virtual  string DisplayName { get; set; } = "Add Name";
     }
 }

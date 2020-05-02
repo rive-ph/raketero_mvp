@@ -13,6 +13,7 @@
     <Application.Resources>
 
         <ResourceDictionary>
+            <Image Source="/Assets/raketero_logo.png" x:Key="AppLogo"/>
             <Color x:Key="Primary">#FFA726</Color>
             <Color x:Key="Secondary">#26A69A</Color>
         </ResourceDictionary>

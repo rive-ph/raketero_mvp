@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+            xmlns:cal="clr-namespace:Caliburn.Micro.Xamarin.Forms;assembly=Caliburn.Micro.Platform.Xamarin.Forms"
+             
+             x:Class="raketero_xamarin.Views.WelcomeView">
+  <ContentView.Content>
+      <StackLayout  VerticalOptions="Center" HorizontalOptions="Fill">
+            <Label HorizontalTextAlignment="Center" FontAttributes="Bold"  FontSize="Large" Text="{Binding Title}" />
+            <Label HorizontalTextAlignment="Center"  Text="{Binding SubTitle}" />
+            <Label HorizontalTextAlignment="Center"  Text="{Binding Caption}" />
+            <Button cal:Message.Attach="Proceed" CornerRadius="10" BackgroundColor="{StaticResource Secondary}" Text="Proceed"/>
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>

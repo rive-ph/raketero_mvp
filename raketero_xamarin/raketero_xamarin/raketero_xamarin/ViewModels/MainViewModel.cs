@@ -1,4 +1,5 @@
 ﻿using Caliburn.Micro;
+using raketero_xamarin.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -6,8 +7,8 @@ using System.Text;
 namespace raketero_xamarin.ViewModels
 {
     public class MainViewModel : ViewModelBase
-    {
-        public override string DisplayName { get; set; } = "Main View";
+    { 
+        public override string DisplayName { get; set; } = "Main";
         public IEventAggregator EventAggregator { get; }
 
         public MainViewModel(IEventAggregator eventAggregator)
@@ -15,5 +16,7 @@ namespace raketero_xamarin.ViewModels
             EventAggregator = eventAggregator;
             EventAggregator.Subscribe(this);
         }
+
+        
     }
 }

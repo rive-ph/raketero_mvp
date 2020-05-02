@@ -9,8 +9,9 @@ D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin
 D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\raketero_xamarin.dll
 D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\ref\raketero_xamarin.dll
 D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\raketero_xamarin.pdb
-D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\Views\LoginView.xaml.g.cs
-D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\Views\SignupView.xaml.g.cs
 D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\raketero_xamarin.csproj.Fody.CopyLocal.cache
 D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\XamlC.stamp
 D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\Views\ShellView.xaml.g.cs
+D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\raketero_xamarin.csprojAssemblyReference.cache
+D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\Views\MainView.xaml.g.cs
+D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\Views\WelcomeView.xaml.g.cs
