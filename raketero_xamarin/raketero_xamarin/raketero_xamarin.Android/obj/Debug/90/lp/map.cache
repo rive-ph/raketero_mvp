@@ -1,5 +1,9 @@
 Autofac
 Autofac.Extras.CommonServiceLocator
+Caliburn.Micro
+Caliburn.Micro.Platform.Core
+Caliburn.Micro.Platform
+Caliburn.Micro.Platform.Xamarin.Forms
 CommonServiceLocator
 FormsViewGroup
 Microsoft.Bcl.AsyncInterfaces
@@ -52,3 +56,5 @@ Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
 netstandard
 System.Threading.Tasks.Extensions
+System.Resources.ResourceManager
+System.Reflection.Extensions

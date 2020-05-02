@@ -1,31 +1,16 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Caliburn.Micro.Xamarin.Forms;
+using raketero_xamarin.ViewModels;
 
 namespace raketero_xamarin
 {
-    public partial class App : Application
+    public partial class App : FormsApplication
     {
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            DisplayRootViewFor<ShellViewModel>();
         }
 
-        protected override void OnStart()
-        {
-            // Handle when your app starts
-        }
 
-        protected override void OnSleep()
-        {
-            // Handle when your app sleeps
-        }
-
-        protected override void OnResume()
-        {
-            // Handle when your app resumes
-        }
     }
 }

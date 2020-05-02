@@ -14,7 +14,7 @@ namespace raketero_xamarin {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("App.xaml")]
-    public partial class App : global::Xamarin.Forms.Application {
+    public partial class App : global::Caliburn.Micro.Xamarin.Forms.FormsApplication {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {

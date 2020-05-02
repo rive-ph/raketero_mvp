@@ -1,9 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Application xmlns="http://xamarin.com/schemas/2014/forms"
+<forms:FormsApplication xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             
+            xmlns:forms="clr-namespace:Caliburn.Micro.Xamarin.Forms;assembly=Caliburn.Micro.Platform.Xamarin.Forms"
+             
+             
              xmlns:vm='clr-namespace:raketero_xamarin.ViewModels'
              x:Class="raketero_xamarin.App">
     <Application.Resources>
@@ -11,9 +15,8 @@
         <ResourceDictionary>
             <Color x:Key="Primary">#FFA726</Color>
             <Color x:Key="Secondary">#26A69A</Color>
-            <vm:ViewModelLocator x:Key="Locator"/>
         </ResourceDictionary>
         
 
     </Application.Resources>
-</Application>
+</forms:FormsApplication>

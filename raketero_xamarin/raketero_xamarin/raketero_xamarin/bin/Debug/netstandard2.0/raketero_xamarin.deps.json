@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "9c8364d954aa0f33455e79e613d8949c4332552c"
+    "signature": "e044c8b453f9228d7608b5500f321367f88467df"
   },
   "compilationOptions": {},
   "targets": {
@@ -11,6 +11,7 @@
         "dependencies": {
           "Autofac": "5.1.4",
           "Autofac.Extras.CommonServiceLocator": "6.0.0",
+          "Caliburn.Micro.Xamarin.Forms": "3.2.0",
           "NETStandard.Library": "2.0.3",
           "PropertyChanged.Fody": "3.2.8",
           "Xamarin.Essentials": "1.1.0",
@@ -40,6 +41,26 @@
           "lib/netstandard2.0/Autofac.Extras.CommonServiceLocator.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.0.0"
+          }
+        }
+      },
+      "Caliburn.Micro.Core/3.2.0": {
+        "runtime": {
+          "lib/net45/Caliburn.Micro.dll": {
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        }
+      },
+      "Caliburn.Micro.Xamarin.Forms/3.2.0": {
+        "dependencies": {
+          "Caliburn.Micro.Core": "3.2.0",
+          "Xamarin.Forms": "4.0.0.425677"
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10/Caliburn.Micro.Platform.Xamarin.Forms.dll": {
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
           }
         }
       },
@@ -156,6 +177,20 @@
       "sha512": "sha512-vVXxHiQw1UCEsYyLuQwSLmqN/gA7Fpbbq4bt+5P914r+wAN5C8Ob8WYddwprTenHh0d8iqiuoQILgiCC01MCNw==",
       "path": "autofac.extras.commonservicelocator/6.0.0",
       "hashPath": "autofac.extras.commonservicelocator.6.0.0.nupkg.sha512"
+    },
+    "Caliburn.Micro.Core/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jmpC4OSvejrrIlcSmlzFjtyOmHQBrKgqJ9hy/LeWGoytct0e2b+TVgzWHTtvkzBF6TWWYlWCNErF10O6hNoL0g==",
+      "path": "caliburn.micro.core/3.2.0",
+      "hashPath": "caliburn.micro.core.3.2.0.nupkg.sha512"
+    },
+    "Caliburn.Micro.Xamarin.Forms/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-z41P2+XXoXUqfdfMhZhxp1RGZbmTpMRtt/VylXKRIfdFnYM3zJlVXPmNvZ9qsCsmPcR6cjazQP+MQPttx3Mz7Q==",
+      "path": "caliburn.micro.xamarin.forms/3.2.0",
+      "hashPath": "caliburn.micro.xamarin.forms.3.2.0.nupkg.sha512"
     },
     "CommonServiceLocator/2.0.5": {
       "type": "package",

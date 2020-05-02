@@ -1,25 +1,25 @@
 ﻿using Autofac;
-using Autofac.Extras.CommonServiceLocator;
-using CommonServiceLocator;
-using raketero_xamarin.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Caliburn.Micro;
+using System.Linq;
+using Xamarin.Forms.Internals;
 
 namespace raketero_xamarin
 {
-    public sealed class Bootstrap 
+    public sealed class Bootstrap : Module
     {
-
-        public static void Initialize()
+        protected override void Load(ContainerBuilder builder)
         {
-            ContainerBuilder builder = new ContainerBuilder();
-            builder.RegisterType<BaseScreen>().AsSelf();
-            IContainer container = builder.Build();
+            base.Load(builder);
 
-            AutofacServiceLocator asl = new AutofacServiceLocator(container);
-            ServiceLocator.SetLocatorProvider(() => asl);
+            builder.RegisterType<App>().AsSelf().SingleInstance();
+            builder.RegisterType<EventAggregator>().As<IEventAggregator>();
+
+            // Registers only classes that match the ViewModel pattern.
+            // Registers them as self and as implemented interfaces.
+            GetType().Assembly.GetTypes()
+                .Where(type => type.IsClass)
+                .Where(type => type.Name.EndsWith("ViewModel"))
+                .ForEach(viewModelType => builder.RegisterType(viewModelType).AsSelf().AsImplementedInterfaces());
         }
-
     }
 }

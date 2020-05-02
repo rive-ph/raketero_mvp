@@ -27,6 +27,28 @@
           "lib/netstandard2.0/Autofac.Extras.CommonServiceLocator.dll": {}
         }
       },
+      "Caliburn.Micro.Core/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Caliburn.Micro.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Caliburn.Micro.dll": {}
+        }
+      },
+      "Caliburn.Micro.Xamarin.Forms/3.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Caliburn.Micro.Core": "[3.2.0]",
+          "Xamarin.Forms": "2.0.1.6505"
+        },
+        "compile": {
+          "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10/Caliburn.Micro.Platform.Xamarin.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10/Caliburn.Micro.Platform.Xamarin.Forms.dll": {}
+        }
+      },
       "CommonServiceLocator/2.0.5": {
         "type": "package",
         "compile": {
@@ -190,6 +212,39 @@
         "lib/netstandard2.0/Autofac.Extras.CommonServiceLocator.dll",
         "lib/netstandard2.0/Autofac.Extras.CommonServiceLocator.pdb",
         "lib/netstandard2.0/Autofac.Extras.CommonServiceLocator.xml"
+      ]
+    },
+    "Caliburn.Micro.Core/3.2.0": {
+      "sha512": "jmpC4OSvejrrIlcSmlzFjtyOmHQBrKgqJ9hy/LeWGoytct0e2b+TVgzWHTtvkzBF6TWWYlWCNErF10O6hNoL0g==",
+      "type": "package",
+      "path": "caliburn.micro.core/3.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "caliburn.micro.core.3.2.0.nupkg.sha512",
+        "caliburn.micro.core.nuspec",
+        "lib/net40/Caliburn.Micro.XML",
+        "lib/net40/Caliburn.Micro.dll",
+        "lib/net45/Caliburn.Micro.dll",
+        "lib/net45/Caliburn.Micro.xml",
+        "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.XML",
+        "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll",
+        "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll.mdb",
+        "lib/sl5/Caliburn.Micro.XML",
+        "lib/sl5/Caliburn.Micro.dll"
+      ]
+    },
+    "Caliburn.Micro.Xamarin.Forms/3.2.0": {
+      "sha512": "z41P2+XXoXUqfdfMhZhxp1RGZbmTpMRtt/VylXKRIfdFnYM3zJlVXPmNvZ9qsCsmPcR6cjazQP+MQPttx3Mz7Q==",
+      "type": "package",
+      "path": "caliburn.micro.xamarin.forms/3.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "caliburn.micro.xamarin.forms.3.2.0.nupkg.sha512",
+        "caliburn.micro.xamarin.forms.nuspec",
+        "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10/Caliburn.Micro.Platform.Xamarin.Forms.dll",
+        "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10/Caliburn.Micro.Platform.Xamarin.Forms.xml"
       ]
     },
     "CommonServiceLocator/2.0.5": {
@@ -833,6 +888,7 @@
     ".NETStandard,Version=v2.0": [
       "Autofac >= 5.1.4",
       "Autofac.Extras.CommonServiceLocator >= 6.0.0",
+      "Caliburn.Micro.Xamarin.Forms >= 3.2.0",
       "NETStandard.Library >= 2.0.3",
       "PropertyChanged.Fody >= 3.2.8",
       "Xamarin.Essentials >= 1.1.0",
@@ -891,6 +947,10 @@
             "target": "Package",
             "version": "[6.0.0, )"
           },
+          "Caliburn.Micro.Xamarin.Forms": {
+            "target": "Package",
+            "version": "[3.2.0, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
@@ -917,5 +977,27 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Caliburn.Micro.Core 3.2.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Caliburn.Micro.Core",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Caliburn.Micro.Xamarin.Forms 3.2.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Caliburn.Micro.Xamarin.Forms",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }
