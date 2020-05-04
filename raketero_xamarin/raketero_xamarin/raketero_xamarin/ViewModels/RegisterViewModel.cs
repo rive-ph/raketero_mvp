@@ -40,27 +40,33 @@ namespace raketero_xamarin.ViewModels
             IsBusy = true;
             LoadingMessage = "Please wait";
 
-
-            AccountsRepository.SignUp
-                (RegisterModel.UserName, RegisterModel.LastName, RegisterModel.Address, 
-                RegisterModel.Email, RegisterModel.ContactNumber, RegisterModel.UserName,
-                RegisterModel.Password).ContinueWith(task =>
-                {
-                    if (task.Status == TaskStatus.RanToCompletion)
+            AccountsRepository.SignUp(
+                    new Services.DTO.RegisterAccountModelDTO()
                     {
-                        var data = task.Result;
-                        IsBusy = false;
-
-                        LoadingMessage = "Account Created!";
-
-                        if (data.responsecode == 1)
+                        UserName = RegisterModel.UserName,
+                        Password = RegisterModel.Password,
+                        FirstName = RegisterModel.FirstName,
+                        LastName = RegisterModel.LastName,
+                        Address = RegisterModel.Address,
+                        ContactNumber = RegisterModel.ContactNumber,
+                        Email = RegisterModel.Email
+                    }).ContinueWith(task =>
+                    {
+                        if (task.Status == TaskStatus.RanToCompletion)
                         {
-                            ViewModelNavigator.NavigateToView("Login");
+                            var data = task.Result;
+                            IsBusy = false;
+
+                            LoadingMessage = "Account Created!";
+
+                            if (data.responsecode == 1)
+                            {
+                                ViewModelNavigator.NavigateToView("Login");
+                            }
+
+
                         }
-
-
-                    }
-                });
+                    });
         }
 
         public void GotoLogin()

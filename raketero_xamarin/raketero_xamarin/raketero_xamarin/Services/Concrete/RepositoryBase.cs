@@ -5,10 +5,8 @@ using System.Text;
 
 namespace raketero_xamarin.Services.Concrete
 {
-    public abstract class RepositoryBase
-    {
-
-    }
+    public interface IRepository { }
+    public abstract class RepositoryBase : IRepository { }
 
     public abstract class RestRepositoryBase : RepositoryBase
     {
@@ -24,10 +22,20 @@ namespace raketero_xamarin.Services.Concrete
             ApiKey = apiKey;
         }
 
-        protected IRestRequest CreateRequest()
+        protected IRestRequest CreateRequest(string type)
         { 
             var request = new RestRequest(Url,DataFormat.Json);
             request.AddParameter("key", ApiKey);
+            request.AddParameter("type", type);
+            return request;
+        }
+
+        protected IRestRequest CreateRequest(string type,string action)
+        {
+            var request = new RestRequest(Url, DataFormat.Json);
+            request.AddParameter("key", ApiKey);
+            request.AddParameter("type", type);
+            request.AddParameter("action", action);
             return request;
         }
 

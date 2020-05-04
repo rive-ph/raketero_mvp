@@ -17,13 +17,17 @@ namespace raketero_xamarin
             builder.RegisterType<App>().AsSelf().SingleInstance();
             builder.RegisterType<EventAggregator>().As<IEventAggregator>().SingleInstance();
             builder.RegisterType<ViewModelNavigator>().As<IViewModelNavigator>().SingleInstance();
-            builder.Register(x => { return new RestConfig("http://api.raketero-app.com/api.php", "d5bcb964-968e-8694-ad43-62c0fd90410f"); })
+            builder.Register(x => { return new RestConfig("http://raketero-app.com/api_stage/api.php", "d5bcb964-968e-8694-ad43-62c0fd90410f"); })
                 .As<IRestConfig>()
                 .SingleInstance();
 
-            builder.RegisterType<AccountsRepository>()
-                .As<IAccountsRepository>()
-                .SingleInstance();
+
+
+
+            builder.RegisterType<AccountsRepository>().As<IAccountsRepository>().SingleInstance();
+            builder.RegisterType<ProfileRepository>().As<IProfileRepository>().SingleInstance();
+            builder.RegisterType<SearchRepository>().As<ISearchRepository>().SingleInstance();
+
 
 
 
@@ -36,3 +40,4 @@ namespace raketero_xamarin
         }
     }
 }
+

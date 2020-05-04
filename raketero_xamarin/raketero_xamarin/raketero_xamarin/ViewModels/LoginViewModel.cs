@@ -41,7 +41,11 @@ namespace raketero_xamarin.ViewModels
             IsBusy = true;
             LoadingMessage = "Authenticating, please wait.";
             await Task.Delay(2000);
-            await AccountsRepository.Login(LoginModel.UserName, LoginModel.Password)
+            await AccountsRepository.Login(new Services.DTO.LoginModelDTO()
+            {
+                Username = LoginModel.UserName,
+                Password = LoginModel.Password
+            })
                  .ContinueWith(task =>
                  {
                      if (task.Status == TaskStatus.RanToCompletion)
@@ -53,6 +57,8 @@ namespace raketero_xamarin.ViewModels
 
                          if(data.responsecode == 1)
                          {
+                             LoginModel.Password = null;
+                             LoadingMessage = string.Empty;
                              ViewModelNavigator.NavigateToView("Main");
                          }
 

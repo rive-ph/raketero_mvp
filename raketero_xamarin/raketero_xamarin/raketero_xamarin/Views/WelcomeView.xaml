@@ -20,13 +20,13 @@
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand" 
                         Source="{imageExtension:ImageResource raketero_xamarin.Assets.raketero_logo2.png}"/>
-                    <Label TextColor="{StaticResource TextColorLight}"  HorizontalTextAlignment="Center" FontAttributes="Bold"  FontSize="Large" Text="{Binding Title}" />
-                    <Label TextColor="{StaticResource TextColorLight}" HorizontalTextAlignment="Center" FontSize="Medium"  Text="{Binding SubTitle}" />
-                    <Label TextColor="{StaticResource TextColorLight}" HorizontalTextAlignment="Center"  Text="{Binding Caption}" />
-                    <StackLayout Margin="0,20,0,0">
-                        <Button cal:Message.Attach="Proceed" CornerRadius="10" TextColor="{StaticResource TextColorDark}" BackgroundColor="{StaticResource Secondary}" Text="Get started"/>
-                        <Button cal:Message.Attach="MoreInfo" CornerRadius="10" TextColor="{StaticResource TextColorDark}" BackgroundColor="{StaticResource Secondary}" Text="More Information"/>
-                    </StackLayout>
+                        <Label TextColor="{StaticResource TextColorLight}"  HorizontalTextAlignment="Center" FontAttributes="Bold"  FontSize="Large" Text="{Binding Title}" />
+                        <Label TextColor="{StaticResource TextColorLight}" HorizontalTextAlignment="Center" FontSize="Medium"  Text="{Binding SubTitle}" />
+                        <Label TextColor="{StaticResource TextColorLight}" HorizontalTextAlignment="Center"  Text="{Binding Caption}" />
+                        <StackLayout Margin="0,20,0,0">
+                            <Button cal:Message.Attach="Proceed" CornerRadius="10" TextColor="{StaticResource TextColorDark}" BackgroundColor="{StaticResource Secondary}" Text="Get started"/>
+                            <Button cal:Message.Attach="MoreInfo" CornerRadius="10" TextColor="{StaticResource TextColorDark}" BackgroundColor="{StaticResource Secondary}" Text="More Information"/>
+                        </StackLayout>
                 </StackLayout>
             </ScrollView>
         </AbsoluteLayout>
