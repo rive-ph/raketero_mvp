@@ -60,7 +60,7 @@ namespace raketero_xamarin.Services.Concrete
         }
         public async Task<ResponseBase<int>> DeleteAccount(DeleteUserProfileModelDTO deleteUserProfileModel)
         {
-            var request = CreateRequest("profile-user", "view");
+            var request = CreateRequest("profile-user", "delete");
             request.AddQueryParameter("user_id", deleteUserProfileModel.User_id.ToString());
             var response = await Client.GetAsync<ResponseBase<int>>(request);
             return response;
