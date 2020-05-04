@@ -9,6 +9,7 @@ FormsViewGroup
 Microsoft.Bcl.AsyncInterfaces
 PropertyChanged
 raketero_xamarin
+RestSharp
 System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Core.Runtime

@@ -4,15 +4,31 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-            xmlns:cal="clr-namespace:Caliburn.Micro.Xamarin.Forms;assembly=Caliburn.Micro.Platform.Xamarin.Forms"
+                xmlns:cal="clr-namespace:Caliburn.Micro.Xamarin.Forms;assembly=Caliburn.Micro.Platform.Xamarin.Forms"
+             xmlns:imageExtension="clr-namespace:raketero_xamarin.Helpers.ValueConverters"
              
              x:Class="raketero_xamarin.Views.WelcomeView">
   <ContentView.Content>
-      <StackLayout  VerticalOptions="Center" HorizontalOptions="Fill">
-            <Label HorizontalTextAlignment="Center" FontAttributes="Bold"  FontSize="Large" Text="{Binding Title}" />
-            <Label HorizontalTextAlignment="Center"  Text="{Binding SubTitle}" />
-            <Label HorizontalTextAlignment="Center"  Text="{Binding Caption}" />
-            <Button cal:Message.Attach="Proceed" CornerRadius="10" BackgroundColor="{StaticResource Secondary}" Text="Proceed"/>
-        </StackLayout>
+        <AbsoluteLayout>
+            <Image Source="{imageExtension:ImageResource raketero_xamarin.Assets.raketero_pattern_bg.png}" 
+                   AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="SizeProportional" Aspect="AspectFill"/>
+            <ScrollView>
+                <StackLayout Padding="20"  VerticalOptions="Center" HorizontalOptions="Fill">
+                    <Image  
+                          HeightRequest="200"
+                        Aspect="AspectFit"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" 
+                        Source="{imageExtension:ImageResource raketero_xamarin.Assets.raketero_logo2.png}"/>
+                    <Label TextColor="{StaticResource TextColorLight}"  HorizontalTextAlignment="Center" FontAttributes="Bold"  FontSize="Large" Text="{Binding Title}" />
+                    <Label TextColor="{StaticResource TextColorLight}" HorizontalTextAlignment="Center" FontSize="Medium"  Text="{Binding SubTitle}" />
+                    <Label TextColor="{StaticResource TextColorLight}" HorizontalTextAlignment="Center"  Text="{Binding Caption}" />
+                    <StackLayout Margin="0,20,0,0">
+                        <Button cal:Message.Attach="Proceed" CornerRadius="10" TextColor="{StaticResource TextColorDark}" BackgroundColor="{StaticResource Secondary}" Text="Get started"/>
+                        <Button cal:Message.Attach="MoreInfo" CornerRadius="10" TextColor="{StaticResource TextColorDark}" BackgroundColor="{StaticResource Secondary}" Text="More Information"/>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </AbsoluteLayout>
   </ContentView.Content>
 </ContentView>

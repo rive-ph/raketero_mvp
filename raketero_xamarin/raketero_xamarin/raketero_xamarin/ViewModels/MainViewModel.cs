@@ -1,22 +1,33 @@
 ﻿using Caliburn.Micro;
 using raketero_xamarin.Abstractions;
+using raketero_xamarin.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace raketero_xamarin.ViewModels
 {
-    public class MainViewModel : ViewModelBase
+    public interface IMainViewModel
+    {
+        void Logout();
+    }
+    //test
+    public class MainViewModel : ViewModelBase , IMainViewModel
     { 
-        public override string DisplayName { get; set; } = "Main";
+        public override string ScreenName { get; set; } = "Main";
         public IEventAggregator EventAggregator { get; }
+        public IViewModelNavigator ViewModelNavigator { get; }
 
-        public MainViewModel(IEventAggregator eventAggregator)
+        public MainViewModel(IEventAggregator eventAggregator, IViewModelNavigator viewModelNavigator)
         {
             EventAggregator = eventAggregator;
+            ViewModelNavigator = viewModelNavigator;
             EventAggregator.Subscribe(this);
         }
 
-        
+        public void Logout()
+        {
+            ViewModelNavigator.NavigateToView("Login");
+        }
     }
 }

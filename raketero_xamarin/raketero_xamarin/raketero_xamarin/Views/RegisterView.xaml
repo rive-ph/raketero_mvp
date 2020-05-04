@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+                xmlns:cal="clr-namespace:Caliburn.Micro.Xamarin.Forms;assembly=Caliburn.Micro.Platform.Xamarin.Forms"
+             xmlns:imageExtension="clr-namespace:raketero_xamarin.Helpers.ValueConverters"
+             
+             x:Class="raketero_xamarin.Views.RegisterView">
+  <ContentView.Content>
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image Source="{imageExtension:ImageResource raketero_xamarin.Assets.raketero_pattern_bg_white.png}" 
+                   AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="SizeProportional" Aspect="AspectFill"/>
+            <Grid Padding="50" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="150"/>
+                </Grid.RowDefinitions>
+                
+                <Label Grid.Row="0" Margin="0,30,0,0" VerticalTextAlignment="Center"
+                       VerticalOptions="Center" HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Large" Text="Sign Up"/>
+
+                <ScrollView Grid.Row="1" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                    <Grid>
+                        <StackLayout Spacing="20" VerticalOptions="Center" HorizontalOptions="Fill">
+
+                            <Entry HeightRequest="40" Placeholder="First Name" Text="{Binding RegisterModel.FirstName}"/>
+                            <Entry HeightRequest="40" Placeholder="Last Name" Text="{Binding RegisterModel.LastName}"/>
+                            <Entry HeightRequest="40" Placeholder="Address" Text="{Binding RegisterModel.Address}"/>
+                            <Entry HeightRequest="40" Placeholder="Email" Text="{Binding RegisterModel.Email}"/>
+                            <Entry HeightRequest="40" Placeholder="Contact Number" Text="{Binding RegisterModel.ContactNumber}"/>
+                            <Entry HeightRequest="40" Placeholder="User Name" Text="{Binding RegisterModel.UserName}"/>
+                            <Entry HeightRequest="40" Placeholder="Password" IsPassword="True"  Text="{Binding RegisterModel.Password}" />
+                        </StackLayout>
+                    </Grid>
+                </ScrollView>
+                <Grid Grid.Row="2">
+                    <StackLayout Spacing="5"  >
+                        <Button CornerRadius="10" cal:Message.Attach="Register"  TextColor="{StaticResource TextColorLight}" BackgroundColor="{StaticResource Primary}" 
+                                Text="Register"/>
+                        <Button  CornerRadius="10"  cal:Message.Attach="GotoLogin"  TextColor="{StaticResource TextColorDark}" BackgroundColor="{StaticResource Secondary}"   
+                                 Text="I Have an account"/>
+                        <ActivityIndicator Color="{StaticResource Secondary}" IsRunning="{Binding IsBusy}"/>
+                        <Label Text="{Binding LoadingMessage}"/>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+          
+        </AbsoluteLayout>
+
+    </ContentView.Content>
+</ContentView>

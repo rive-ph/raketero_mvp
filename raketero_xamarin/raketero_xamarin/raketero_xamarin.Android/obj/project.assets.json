@@ -173,6 +173,15 @@
           "build/PropertyChanged.Fody.props": {}
         }
       },
+      "RestSharp/106.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "compile": {
@@ -1477,6 +1486,7 @@
           "Autofac.Extras.CommonServiceLocator": "6.0.0",
           "Caliburn.Micro.Xamarin.Forms": "3.2.0",
           "PropertyChanged.Fody": "3.2.8",
+          "RestSharp": "106.10.1",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "4.0.0.425677"
         },
@@ -1784,6 +1794,21 @@
         "propertychanged.fody.nuspec",
         "weaver/PropertyChanged.Fody.dll",
         "weaver/PropertyChanged.Fody.xcf"
+      ]
+    },
+    "RestSharp/106.10.1": {
+      "sha512": "MhR4w8LbArVaRA5T/oAR3ZnF852QXtDXRBO84GsvyYzsm7FsjXHJ+JaM8x/nR/B/OCB1WbolGH7hqMT1GZpNJw==",
+      "type": "package",
+      "path": "restsharp/106.10.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.106.10.1.nupkg.sha512",
+        "restsharp.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -5568,6 +5593,7 @@
       "Autofac.Extras.CommonServiceLocator >= 6.0.0",
       "Caliburn.Micro.Xamarin.Forms >= 3.2.0",
       "PropertyChanged.Fody >= 3.2.8",
+      "RestSharp >= 106.10.1",
       "Xamarin.Android.Support.Core.Utils >= 28.0.0.1",
       "Xamarin.Android.Support.CustomTabs >= 28.0.0.1",
       "Xamarin.Android.Support.Design >= 28.0.0.1",
@@ -5637,6 +5663,10 @@
           "PropertyChanged.Fody": {
             "target": "Package",
             "version": "[3.2.8, )"
+          },
+          "RestSharp": {
+            "target": "Package",
+            "version": "[106.10.1, )"
           },
           "Xamarin.Android.Support.Core.Utils": {
             "target": "Package",

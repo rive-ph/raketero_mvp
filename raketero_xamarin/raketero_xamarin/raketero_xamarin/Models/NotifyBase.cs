@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
 
-namespace raketero_xamarin.Views
+namespace raketero_xamarin
 {
     [AddINotifyPropertyChangedInterface]
     public abstract class NotifyBase : INotifyPropertyChanged

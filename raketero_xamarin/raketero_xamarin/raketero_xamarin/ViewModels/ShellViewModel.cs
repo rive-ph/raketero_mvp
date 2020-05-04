@@ -2,28 +2,32 @@
 using raketero_xamarin.Abstractions;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
-using System.Text;
 
 namespace raketero_xamarin.ViewModels
 {
     public class ShellViewModel : Conductor<IViewModel>.Collection.OneActive,
-        IHandle<Func<ILoginViewModel, string>>
+        IHandle<Func<IViewModel, string>>
     {
+        public IEventAggregator EventAggregator { get; }
 
         public ShellViewModel(IEnumerable<IViewModel> viewModels, IEventAggregator eventAggregator)
         {
-            Items.AddRange(viewModels);
-            ActiveItem = Items.FirstOrDefault(x => x.DisplayName == "Welcome");
             EventAggregator = eventAggregator;
             EventAggregator.Subscribe(this);
+
+            Items.AddRange(viewModels);
+            ActiveItem = Items.FirstOrDefault(x => x.ScreenName == "Welcome");
         }
 
-        public IEventAggregator EventAggregator { get; }
 
-        public void Handle(Func<ILoginViewModel, string> message)
+        public void Handle(Func<IViewModel, string> message)
         {
-            ActiveItem = Items.FirstOrDefault(x => x.DisplayName == "Main");
+            var data = message(null);
+            ActiveItem = Items.FirstOrDefault(x => x.ScreenName == data);
         }
+
+      
     }
 }

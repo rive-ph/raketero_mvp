@@ -6,6 +6,6 @@ namespace raketero_xamarin.Abstractions
 {
     public interface IViewModel
     {
-        string DisplayName { get; set; }
+        string ScreenName { get; set; }
     }
 }

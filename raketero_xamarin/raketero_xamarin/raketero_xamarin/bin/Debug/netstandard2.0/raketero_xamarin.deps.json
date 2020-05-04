@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "e044c8b453f9228d7608b5500f321367f88467df"
+    "signature": "1ccc41ab175dded06b0bcbcd60af52c429945795"
   },
   "compilationOptions": {},
   "targets": {
@@ -14,6 +14,7 @@
           "Caliburn.Micro.Xamarin.Forms": "3.2.0",
           "NETStandard.Library": "2.0.3",
           "PropertyChanged.Fody": "3.2.8",
+          "RestSharp": "106.10.1",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "4.0.0.425677"
         },
@@ -99,6 +100,14 @@
           "lib/netstandard1.0/PropertyChanged.dll": {
             "assemblyVersion": "3.2.8.0",
             "fileVersion": "3.2.8.0"
+          }
+        }
+      },
+      "RestSharp/106.10.1": {
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {
+            "assemblyVersion": "106.0.0.0",
+            "fileVersion": "106.10.1.0"
           }
         }
       },
@@ -233,6 +242,13 @@
       "sha512": "sha512-UfhhtFPgbqwx8cpuxdRbz9cuHve2BXEs1DjPAA/4p/TfqnTct3glcUz5MQ/TGDjFxHmO1Dc4ETS+B1Zk38TnbQ==",
       "path": "propertychanged.fody/3.2.8",
       "hashPath": "propertychanged.fody.3.2.8.nupkg.sha512"
+    },
+    "RestSharp/106.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MhR4w8LbArVaRA5T/oAR3ZnF852QXtDXRBO84GsvyYzsm7FsjXHJ+JaM8x/nR/B/OCB1WbolGH7hqMT1GZpNJw==",
+      "path": "restsharp/106.10.1",
+      "hashPath": "restsharp.106.10.1.nupkg.sha512"
     },
     "System.Numerics.Vectors/4.5.0": {
       "type": "package",

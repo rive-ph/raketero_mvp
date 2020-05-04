@@ -11,16 +11,39 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\raketero_cover.jpg" />
+    <None Remove="Assets\raketero_logo.png" />
+    <None Remove="Assets\raketero_logo2.png" />
+    <None Remove="Assets\raketero_pattern_bg.png" />
+    <None Remove="Assets\raketero_pattern_bg_white.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\raketero_cover.jpg" />
+    <EmbeddedResource Include="Assets\raketero_logo.png" />
+    <EmbeddedResource Include="Assets\raketero_logo2.png" />
+    <EmbeddedResource Include="Assets\raketero_pattern_bg.png" />
+    <EmbeddedResource Include="Assets\raketero_pattern_bg_white.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Autofac" Version="5.1.4" />
     <PackageReference Include="Autofac.Extras.CommonServiceLocator" Version="6.0.0" />
     <PackageReference Include="Caliburn.Micro.Xamarin.Forms" Version="3.2.0" />
     <PackageReference Include="PropertyChanged.Fody" Version="3.2.8" />
+    <PackageReference Include="RestSharp" Version="106.10.1" />
     <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Views\LoginView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\MainView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\RegisterView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\ShellView.xaml">
@@ -29,9 +52,5 @@
     <EmbeddedResource Update="Views\WelcomeView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Helpers\ValueConverters\" />
   </ItemGroup>
 </Project>
