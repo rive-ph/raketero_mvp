@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:cal="clr-namespace:Caliburn.Micro.Xamarin.Forms;assembly=Caliburn.Micro.Platform.Xamarin.Forms"
+             x:Class="raketero_xamarin.Views.AddJobProfileView">
+    
+  <ContentView.Content>
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid Padding="50" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="150"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Margin="0,30,0,0" VerticalTextAlignment="Center"
+                       VerticalOptions="Center" HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium" Text="Add details to your portfolio"/>
+
+                <ScrollView Grid.Row="1" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                    <Grid>
+                        <StackLayout Spacing="20" VerticalOptions="Center" HorizontalOptions="Fill">
+                            <Picker HeightRequest="40" ItemDisplayBinding="{Binding Name}" SelectedItem="{Binding AddJobProfileModel.SelectedJob}" ItemsSource="{Binding JobList}"/>
+                            <Entry HeightRequest="40" Placeholder="Job title" Text="{Binding AddJobProfileModel.Job_title}"/>
+                            <DatePicker HeightRequest="40"  Date="{Binding AddJobProfileModel.Start_date}"/>
+                            <DatePicker HeightRequest="40"  Date="{Binding AddJobProfileModel.End_date}"/>
+
+                            
+                        </StackLayout>
+                    </Grid>
+                </ScrollView>
+                <Grid Grid.Row="2">
+                    <StackLayout Spacing="5"  >
+                        <Button CornerRadius="10" cal:Message.Attach="AddProfile" 
+                                TextColor="{StaticResource TextColorLight}" BackgroundColor="{StaticResource Primary}" 
+                                Text="Save and continue"/>
+                        <ActivityIndicator Color="{StaticResource Secondary}" IsRunning="{Binding IsBusy}"/>
+                        <Label Text="{Binding LoadingMessage}"/>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+
+        </AbsoluteLayout>
+    </ContentView.Content>
+</ContentView>

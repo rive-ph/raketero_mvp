@@ -31,7 +31,6 @@ namespace raketero_xamarin.Services.Concrete
             request.AddQueryParameter("password", loginModel.Password);
             var response = await Client.GetAsync<ResponseBase<List<Account>>> (request);
 
-
             return response;
         }
 
@@ -39,7 +38,7 @@ namespace raketero_xamarin.Services.Concrete
         {
             var request = CreateRequest("sign-up");
             request.AddQueryParameter("firstname", registerAccountModel.FirstName);
-            request.AddQueryParameter("lastname", registerAccountModel.LastName);
+            request.AddQueryParameter("lastname", registerAccountModel.LastName); 
             request.AddQueryParameter("address", registerAccountModel.Address);
             request.AddQueryParameter("email", registerAccountModel.Email);
             request.AddQueryParameter("contact_number", registerAccountModel.ContactNumber);

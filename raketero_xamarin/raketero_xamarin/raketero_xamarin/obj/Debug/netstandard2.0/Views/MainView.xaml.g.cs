@@ -8,17 +8,5 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("raketero_xamarin.Views.MainView.xaml", "Views/MainView.xaml", typeof(global::raketero_xamarin.Views.MainView))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("raketero_xamarin.Views.MainView.xaml", "Views/MainView.xaml", null)]
 
-namespace raketero_xamarin.Views {
-    
-    
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\MainView.xaml")]
-    public partial class MainView : global::Xamarin.Forms.ContentView {
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainView));
-        }
-    }
-}

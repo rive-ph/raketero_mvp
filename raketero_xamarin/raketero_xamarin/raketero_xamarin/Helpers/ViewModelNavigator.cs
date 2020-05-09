@@ -9,6 +9,8 @@ namespace raketero_xamarin.Helpers
     public interface IViewModelNavigator
     {
         void NavigateToView(string viewName);
+        void NavigateToView<T>(string viewName, T payload);
+
     }
 
     public class ViewModelNavigator : IViewModelNavigator
@@ -24,6 +26,11 @@ namespace raketero_xamarin.Helpers
         {
             Func<IViewModel, string> handle = x => viewName;
             EventAggregator.PublishOnBackgroundThread(handle);
+        }
+
+        public void NavigateToView<T>(string viewName, T payload)
+        {
+            Func<IViewModel, string> handle = x => viewName;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using raketero_xamarin.Helpers;
+﻿using Android.Content.Res;
+using raketero_xamarin.Helpers;
 using raketero_xamarin.Models;
 using raketero_xamarin.Services.Concrete;
 using System;
@@ -50,18 +51,24 @@ namespace raketero_xamarin.ViewModels
                         Address = RegisterModel.Address,
                         ContactNumber = RegisterModel.ContactNumber,
                         Email = RegisterModel.Email
-                    }).ContinueWith(task =>
+                    }).ContinueWith(async task =>
                     {
                         if (task.Status == TaskStatus.RanToCompletion)
                         {
                             var data = task.Result;
-                            IsBusy = false;
 
-                            LoadingMessage = "Account Created!";
 
                             if (data.responsecode == 1)
                             {
-                                ViewModelNavigator.NavigateToView("Login");
+                                IsBusy = false;
+                                LoadingMessage = "Account Created!";
+                                await Task.Delay(3000);
+                                ViewModelNavigator.NavigateToView("AddJobProfile");
+                            }
+                            else
+                            {
+                                IsBusy = false;
+                                LoadingMessage = data.responsemsg;
                             }
 
 

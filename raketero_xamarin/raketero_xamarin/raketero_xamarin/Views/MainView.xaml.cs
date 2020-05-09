@@ -10,11 +10,18 @@ using Xamarin.Forms.Xaml;
 namespace raketero_xamarin.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainView : ContentView
+    public partial class MainView : TabbedPage
     {
         public MainView()
         {
-            InitializeComponent();
+            var navigationPage = new NavigationPage();
+            navigationPage.IconImageSource = "schedule.png";
+            navigationPage.Title = "Schedule";
+
+            Children.Add(new ContentPage());
+            Children.Add(new ContentPage());
+            Children.Add(new ContentPage());
+            Children.Add(navigationPage);
         }
     }
 }

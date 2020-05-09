@@ -97,6 +97,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.0.0.425677, )"
+            },
+            "Xamarin.Forms.Maps": {
+              "target": "Package",
+              "version": "[4.0.0.425677, )"
             }
           }
         }
@@ -172,6 +176,10 @@
               "version": "[1.1.0, )"
             },
             "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.0.0.425677, )"
+            },
+            "Xamarin.Forms.Maps": {
               "target": "Package",
               "version": "[4.0.0.425677, )"
             }

@@ -14,9 +14,13 @@ namespace raketero_xamarin.ViewModels
     //test
     public class MainViewModel : ViewModelBase , IMainViewModel
     { 
+        public IModalView ActiveModal { get; set; }
         public override string ScreenName { get; set; } = "Main";
         public IEventAggregator EventAggregator { get; }
         public IViewModelNavigator ViewModelNavigator { get; }
+
+        
+
 
         public MainViewModel(IEventAggregator eventAggregator, IViewModelNavigator viewModelNavigator)
         {

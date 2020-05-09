@@ -14,6 +14,13 @@ D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin
 D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\Views\WelcomeView.xaml.g.cs
 D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\Views\LoginView.xaml.g.cs
 D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\Views\RegisterView.xaml.g.cs
+D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\raketero_xamarin.csprojAssemblyReference.cache
+D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\bin\Debug\netstandard2.0\Mono.Android.dll
+D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\bin\Debug\netstandard2.0\Mono.Android.pdb
+D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\bin\Debug\netstandard2.0\Mono.Android.xml
+D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\raketero_xamarin.csproj.CopyComplete
+D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\Views\ManageUserProfileView.xaml.g.cs
+D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\Views\AddJobProfileView.xaml.g.cs
 D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\raketero_xamarin.csproj.Fody.CopyLocal.cache
 D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\XamlC.stamp
-D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\raketero_xamarin.csprojAssemblyReference.cache
+D:\raketero\apps\raketero_mvp\raketero_xamarin\raketero_xamarin\raketero_xamarin\obj\Debug\netstandard2.0\Views\ProfileInfoCard.xaml.g.cs
